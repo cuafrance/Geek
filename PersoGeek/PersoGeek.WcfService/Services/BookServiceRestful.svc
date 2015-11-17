@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PersoGeek.WcfService.Services.BookServiceRestful" CodeBehind="BookServiceRestful.svc.cs" %>
