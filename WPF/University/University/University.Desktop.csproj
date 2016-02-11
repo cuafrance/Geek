@@ -81,6 +81,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -152,9 +153,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CourseModule\CourseModule.csproj">
+      <Project>{6d7b77f8-17fe-4f8b-8955-2e61d668648f}</Project>
+      <Name>CourseModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeModule\HomeModule.csproj">
+      <Project>{d4235abb-c39c-4737-b8ec-f6eaadf1a8ce}</Project>
+      <Name>HomeModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentModule\StudentModule.csproj">
+      <Project>{66b0b52d-0849-472a-bf50-dad72187e8fc}</Project>
+      <Name>StudentModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\University.Common\University.Common.csproj">
       <Project>{c00c35fb-6d7e-4323-aa71-46557ac2ee3e}</Project>
       <Name>University.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\University.DataAccess\University.DataAccess.csproj">
+      <Project>{cd448df5-224c-4ad8-be37-f6b055891c37}</Project>
+      <Name>University.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\University.Models\University.Models.csproj">
+      <Project>{f0f773f3-99a0-4e6b-8a0c-01d22580801a}</Project>
+      <Name>University.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2A1269
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University.Common", "University.Common\University.Common.csproj", "{C00C35FB-6D7E-4323-AA71-46557AC2EE3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseModule", "CourseModule\CourseModule.csproj", "{6D7B77F8-17FE-4F8B-8955-2E61D668648F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeModule", "HomeModule\HomeModule.csproj", "{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,14 @@ Global
 		{C00C35FB-6D7E-4323-AA71-46557AC2EE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C00C35FB-6D7E-4323-AA71-46557AC2EE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C00C35FB-6D7E-4323-AA71-46557AC2EE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7B77F8-17FE-4F8B-8955-2E61D668648F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7B77F8-17FE-4F8B-8955-2E61D668648F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7B77F8-17FE-4F8B-8955-2E61D668648F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7B77F8-17FE-4F8B-8955-2E61D668648F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,5 +75,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{66B0B52D-0849-472A-BF50-DAD72187E8FC} = {DCE3286C-45F5-47A2-91F7-FA428C0DD737}
 		{C00C35FB-6D7E-4323-AA71-46557AC2EE3E} = {2A12691E-BEDB-417B-AC69-83641317F759}
+		{6D7B77F8-17FE-4F8B-8955-2E61D668648F} = {DCE3286C-45F5-47A2-91F7-FA428C0DD737}
+		{D4235ABB-C39C-4737-B8EC-F6EAADF1A8CE} = {DCE3286C-45F5-47A2-91F7-FA428C0DD737}
 	EndGlobalSection
 EndGlobal
