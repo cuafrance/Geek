@@ -4,7 +4,7 @@
         xmlns:prism="http://prismlibrary.com/"
         xmlns:common="clr-namespace:University.Common;assembly=University.Common"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="300" Width="300">
+        Title="{Binding Title}" Height="400" Width="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -12,7 +12,7 @@
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
         <!-- Ribbon -->
-        <Ribbon Grid.Row="0" prism:RegionManager.RegionName="{x:Static common:KnownRegionNames.HeaderRegionName}"></Ribbon>
+        <Ribbon Grid.Row="0" prism:RegionManager.RegionName="{x:Static common:KnownRegionNames.HeaderRegionName}" VerticalAlignment="Stretch"></Ribbon>
         <!-- Workspace -->
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static common:KnownRegionNames.ContentRegionName}"></ContentControl>
         <StatusBar Grid.Row="2">

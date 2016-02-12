@@ -29,9 +29,9 @@ namespace HomeModule
 
         public void Initialize()
         {
-            //_regionManager.RegisterViewWithRegion(KnownRegionNames.HeaderRegionName, typeof(HomeRibbonView));
-            //_regionManager.Regions[KnownRegionNames.ContentRegionName].Add(new HomeWorkspaceView(), "HomeWorkspaceView");
-            //_regionManager.RequestNavigate(KnownRegionNames.ContentRegionName, "HomeWorkspaceView");
+            _regionManager.RegisterViewWithRegion(KnownRegionNames.HeaderRegionName, typeof(HomeRibbonView));
+            _regionManager.Regions[KnownRegionNames.ContentRegionName].Add(new HomeWorkspaceView(), "HomeWorkspaceView");
+            _regionManager.RequestNavigate(KnownRegionNames.ContentRegionName, "HomeWorkspaceView");
         }
     }
 }

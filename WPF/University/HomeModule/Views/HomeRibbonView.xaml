@@ -9,8 +9,8 @@
     
     <RibbonGroup Header="Group Home">
         <RibbonButton Label="Home"></RibbonButton>
-        <RibbonButton Label="Student"></RibbonButton>
-        <RibbonButton Label="Course"></RibbonButton>
+        <RibbonButton Label="Help"></RibbonButton>
+        <RibbonButton Label="?"></RibbonButton>
     </RibbonGroup>
 </baseType:RibbonTabViewBase>
 
