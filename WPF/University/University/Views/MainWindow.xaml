@@ -27,10 +27,7 @@
         <KeyBinding Key="O" Modifiers="Control" Command="{Binding OpenCommand}"></KeyBinding>
     </Window.InputBindings>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="305*"/>
-            <ColumnDefinition Width="287*"/>
-        </Grid.ColumnDefinitions>
+     
         <Grid.RowDefinitions>
             <RowDefinition x:Name="MenRow" Height="25"></RowDefinition>
             <RowDefinition x:Name="HeaderRow" Height="Auto"></RowDefinition>
@@ -55,8 +52,9 @@
             </MenuItem>
             <MenuItem x:Name="Help"  Header="Help ?"  Command="{Binding HelpCommand}"></MenuItem>
         </Menu>
-        <ContentControl Grid.Row="1" mvvm:RegionManager.RegionName="{x:Static common:KnownRegionNames.HeaderRegionName }" Grid.ColumnSpan="2" Margin="0,0,0,325" Grid.RowSpan="2"/>
-        <ItemsControl Grid.Row="2"  mvvm:RegionManager.RegionName="{x:Static common:KnownRegionNames.ContentRegionName }" Grid.ColumnSpan="2"/>
+        <ContentControl Grid.Row="1" mvvm:RegionManager.RegionName="{x:Static common:KnownRegionNames.HeaderRegionName }"/>
+        <Separator Grid.Row="1" VerticalAlignment="Stretch"></Separator>
+        <ItemsControl Grid.Row="2"  mvvm:RegionManager.RegionName="{x:Static common:KnownRegionNames.ContentRegionName }"/>
         <StatusBar Grid.Row="3" VerticalAlignment="Stretch" Background="Transparent">
             <Separator></Separator>
             <TextBlock Text="{Binding Status}"></TextBlock>

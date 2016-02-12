@@ -104,6 +104,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\MainRibbonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -114,9 +118,13 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Logs\FileLogger.cs" />
+    <Compile Include="ViewModels\MainRibbonWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\CustomPopupView.xaml.cs">
       <DependentUpon>CustomPopupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainRibbonWindow.xaml.cs">
+      <DependentUpon>MainRibbonWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

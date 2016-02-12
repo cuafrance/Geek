@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using University.Common.BaseType;
 
 namespace HomeModule.Views
 {
     /// <summary>
-    /// Interaction logic for RibbonTabView.xaml
+    /// Interaction logic for HomeWorkspaceView.xaml
     /// </summary>
-    public partial class RibbonTabView 
+    public partial class HomeWorkspaceView : WorkspaceViewBase
     {
-        public RibbonTabView()
+        public HomeWorkspaceView()
         {
             InitializeComponent();
+            this._ViewName = "HomeWorkspaceView";
         }
     }
 }

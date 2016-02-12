@@ -1,0 +1,24 @@
+﻿<RibbonWindow x:Class="University.Desktop.Views.MainRibbonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:common="clr-namespace:University.Common;assembly=University.Common"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!-- Ribbon -->
+        <Ribbon Grid.Row="0" prism:RegionManager.RegionName="{x:Static common:KnownRegionNames.HeaderRegionName}"></Ribbon>
+        <!-- Workspace -->
+        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static common:KnownRegionNames.ContentRegionName}"></ContentControl>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock Text="{Binding Status}"></TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</RibbonWindow>

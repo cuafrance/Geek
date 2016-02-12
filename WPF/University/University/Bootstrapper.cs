@@ -14,7 +14,8 @@ namespace University.Desktop
     {
         protected override DependencyObject CreateShell()
         {
-            return Container.TryResolve<MainWindow>();
+            //return Container.TryResolve<MainWindow>();
+            return Container.TryResolve<MainRibbonWindow>();
         }
 
         protected override void InitializeShell()
@@ -26,12 +27,10 @@ namespace University.Desktop
 
             RegisterTypeIfMissing(typeof(ILoggerFacade), typeof(FileLogger), true);
 
-            //IRegionManager regionManager = this.Container.TryResolve<IRegionManager>();
-            //regionManager.Regions[KnownRegionNames.ContentRegionName].Add(new HomeView(), typeof (HomeView).Name);
-            //regionManager.Regions[KnownRegionNames.HeaderRegionName].Add(new RibbonTabView(), typeof(RibbonTabView).Name);
-
-            //regionManager.RequestNavigate(KnownRegionNames.ContentRegionName,);
-            
+            //IRegionManager regionMgr = this.Container.TryResolve<IRegionManager>();
+            ////regionMgr.Regions[KnownRegionNames.HeaderRegionName].Add(new RibbonTabView(), "RibbonTabView");
+            ////regionMgr.Regions[KnownRegionNames.ContentRegionName].Add(new HomeView(), "HomeView");
+            ////regionMgr.RequestNavigate(KnownRegionNames.ContentRegionName, "HomeView");
         }
 
         protected override void ConfigureModuleCatalog()

@@ -73,18 +73,25 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\HomeView.xaml.cs">
-      <DependentUpon>HomeView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="HomeModule.cs" />
-    <Compile Include="Views\RibbonTabView.xaml.cs">
-      <DependentUpon>RibbonTabView.xaml</DependentUpon>
+    <Compile Include="Views\HomeWorkspaceView.xaml.cs">
+      <DependentUpon>HomeWorkspaceView.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\HomeView.xaml">
+    <Compile Include="Views\HomeRibbonView.xaml.cs">
+      <DependentUpon>HomeRibbonView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ToolbarView.xaml.cs">
+      <DependentUpon>ToolbarView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\HomeWorkspaceView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\RibbonTabView.xaml">
+    <Page Include="Views\HomeRibbonView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ToolbarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

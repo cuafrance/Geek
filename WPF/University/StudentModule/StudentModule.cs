@@ -23,7 +23,7 @@ namespace StudentModule
 
         public void Initialize()
         {
-            throw new NotImplementedException();
+            //TODO
         }
     }
 }
