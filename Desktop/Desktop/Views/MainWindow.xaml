@@ -24,10 +24,12 @@
     <Grid>
         <Grid.RowDefinitions>
            <RowDefinition Height="25"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto" Name="WorkSpace"></RowDefinition>
+            <RowDefinition Height="*" Name="DashBoard"></RowDefinition>
             <RowDefinition Height="25"></RowDefinition>
         </Grid.RowDefinitions>
+        <ContentControl prism:RegionManager.RegionName="WorkSpace" Grid.Row="1"></ContentControl>
+        <ContentControl prism:RegionManager.RegionName="DashBoard" Grid.Row="2"></ContentControl>
         <Menu Grid.Row="0">
             <MenuItem Header="Edit"></MenuItem>
             <MenuItem Header="Interactivity">
@@ -35,6 +37,9 @@
                 <MenuItem Header="Show Confirmation" Command="{Binding ConfirmationCommand}"></MenuItem>
                 <MenuItem Header="Show Custom Popup" Command="{Binding CustomPopupCommand}"></MenuItem>
                 <MenuItem Header="Show MessageBox" Command="{Binding MessageBoxCommand}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="TPL">
+                <MenuItem Header="Thread.Sleep vs Task.Delay" Command="{Binding ThreadSleepAndTaskDelayCommand}"></MenuItem>
             </MenuItem>
         </Menu>
         <StatusBar Grid.Row="3">

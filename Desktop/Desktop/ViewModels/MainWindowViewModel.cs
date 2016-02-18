@@ -1,13 +1,18 @@
 ﻿using System.Windows;
 using System.Windows.Input;
+using Desktop.Main.Views;
+using Microsoft.Practices.Unity;
 using Prism.Commands;
 using Prism.Interactivity.InteractionRequest;
 using Prism.Mvvm;
+using Prism.Regions;
 
 namespace Desktop.Main.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+        private IRegionManager _regionManager;
+        private IUnityContainer _unityContainer;
         string _title;
         public string Title
         {
@@ -30,9 +35,11 @@ namespace Desktop.Main.ViewModels
         public InteractionRequest<INotification> CustomPopupRequest { get; set; }
         public ICommand CustomPopupCommand { get; set; }
         public ICommand MessageBoxCommand { get; set; }
-
-        public MainWindowViewModel()
+        public ICommand ThreadSleepAndTaskDelayCommand { get; set; }
+        public MainWindowViewModel(IRegionManager regionManager, IUnityContainer unityContainer)
         {
+            _regionManager = regionManager;
+            _unityContainer = unityContainer;
             _title = "Main window";
             _status = "Nothing";
             NotificationRequest = new InteractionRequest<INotification>();
@@ -45,6 +52,13 @@ namespace Desktop.Main.ViewModels
             CustomPopupCommand = new DelegateCommand(ShowCustomPopup);
 
             MessageBoxCommand = new DelegateCommand(ShowMessageBox);
+            ThreadSleepAndTaskDelayCommand = new DelegateCommand(ThreadSleepAndTaskDelay);
+        }
+
+        private void ThreadSleepAndTaskDelay()
+        {
+            _regionManager.Regions["WorkSpace"].Add(new TPLWorkSpace(), "TPLWorkSpace");
+            _regionManager.Regions["DashBoard"].Add(new TPLDashBoard(), "TPLDashBoard");
         }
 
         private void ShowMessageBox()
@@ -77,5 +91,7 @@ namespace Desktop.Main.ViewModels
                 Status = "Notification raised";
             });
         }
+
+
     }
 }

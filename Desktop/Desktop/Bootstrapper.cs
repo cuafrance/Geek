@@ -23,5 +23,6 @@ namespace Desktop.Main
             Application.Current.MainWindow = (Window) this.Shell;
             Application.Current.MainWindow.ShowDialog();
         }
+        
     }
 }

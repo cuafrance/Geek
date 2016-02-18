@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Desktop.Main.Views.TPLWorkSpace"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:prism ="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Button  Grid.Row ="0" Content="Thread Sleep" BorderThickness="2" Margin="10" Padding="10" Command="{Binding ThreadSleepCommand}"></Button>
+        <Button Grid.Row ="1" Content="Task Delay" BorderThickness="2" Margin="10" Padding="10" Command="{Binding TaskDelayCommand}"></Button>
+        <Button Grid.Row ="2" Content="Cancel Task Delay" BorderThickness="2" Margin="10" Padding="20" Command="{Binding CancelTaskDelayCommand}"></Button>
+    </Grid>
+</UserControl>
