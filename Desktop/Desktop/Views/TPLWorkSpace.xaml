@@ -16,6 +16,6 @@
         
         <Button  Grid.Row ="0" Content="Thread Sleep" BorderThickness="2" Margin="10" Padding="10" Command="{Binding ThreadSleepCommand}"></Button>
         <Button Grid.Row ="1" Content="Task Delay" BorderThickness="2" Margin="10" Padding="10" Command="{Binding TaskDelayCommand}"></Button>
-        <Button Grid.Row ="2" Content="Cancel Task Delay" BorderThickness="2" Margin="10" Padding="20" Command="{Binding CancelTaskDelayCommand}"></Button>
+        <Button Grid.Row ="2" Content="Cancel Task Delay" BorderThickness="2" Margin="10" Padding="20" Command="{Binding CancelTaskDelayCommand}" ></Button>
     </Grid>
 </UserControl>

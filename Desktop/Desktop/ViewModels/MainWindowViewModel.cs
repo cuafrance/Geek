@@ -36,6 +36,7 @@ namespace Desktop.Main.ViewModels
         public ICommand CustomPopupCommand { get; set; }
         public ICommand MessageBoxCommand { get; set; }
         public ICommand ThreadSleepAndTaskDelayCommand { get; set; }
+
         public MainWindowViewModel(IRegionManager regionManager, IUnityContainer unityContainer)
         {
             _regionManager = regionManager;
